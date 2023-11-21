@@ -10,12 +10,12 @@ export const Title = styled.Text`
 
   font-size: ${() => useTheme().FONT_SIZE.XL}px;
   font-family: ${() => useTheme().FONT_FAMILY.BOLD};
-  color: ${() => useTheme().COlORS.WHITE};
+  color: ${() => useTheme().COLORS.WHITE};
 `
 export const Subtitle = styled.Text`
   text-align: center;
 
   font-size: ${() => useTheme().FONT_SIZE.MD}px;
   font-family: ${() => useTheme().FONT_FAMILY.REGULAR};
-  color: ${() => useTheme().COlORS.GRAY_300};
+  color: ${() => useTheme().COLORS.GRAY_300};
 `

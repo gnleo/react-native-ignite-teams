@@ -7,7 +7,7 @@ export const Container = styled(TouchableOpacity)`
   width: 100%;
   height: 90px;
 
-  background-color: ${()=> useTheme().COlORS.GRAY_500};
+  background-color: ${()=> useTheme().COLORS.GRAY_500};
   border-radius: 6px;
 
   flex-direction: row;
@@ -18,14 +18,14 @@ export const Container = styled(TouchableOpacity)`
 `
 
 export const Title = styled.Text`
-  color: ${() => useTheme().COlORS.GRAY_200};
+  color: ${() => useTheme().COLORS.GRAY_200};
   font-size: ${() => useTheme().FONT_SIZE.MD}px;
   font-family: ${() => useTheme().FONT_FAMILY.REGULAR};
 `
 
 export const Icon = styled(UsersThree).attrs(() => ({
   size: 32,
-  color: useTheme().COlORS.GREEN_700,
+  color: useTheme().COLORS.GREEN_700,
   weight: 'fill'
 }))`
   margin-right: 20px;
