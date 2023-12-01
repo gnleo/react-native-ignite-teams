@@ -19,6 +19,12 @@ npx expo install expo-font @expo-google-fonts/roboto
 npm i phosphor-react-native
 # plugin para utilização de imagens svg
 npx expo install react-native-svg
+# (core) de navegação
+npm i @react-navigate/native
+# dependências da biblioteca de navegação (com configurações em código nativo implementadas)
+npx expo install react-native-screens react-native-safe-area-context
+# estratégia de navegação
+npm i @react-navigation/native-stack
 ```
 
 Dependências de desenvolvimento

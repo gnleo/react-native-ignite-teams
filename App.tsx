@@ -5,10 +5,7 @@ import theme from '@theme/index'
 
 import { Loading } from '@components/Loading';
 import { StatusBar } from 'react-native';
-
-import { Groups } from '@screens/groups';
-import { NewGroup } from '@screens/newGroup';
-import { Players } from '@screens/players'
+import { Routes } from '@routes/index';
 
 export default function App() {
   const [isLoadedFonts] = useFonts({Roboto_400Regular, Roboto_700Bold})
@@ -20,7 +17,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      { isLoadedFonts ? <Groups/> : <Loading/> }
+      { isLoadedFonts ? <Routes/> : <Loading/> }
     </ThemeProvider>
   );
 }
