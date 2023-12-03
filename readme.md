@@ -25,6 +25,8 @@ npm i @react-navigate/native
 npx expo install react-native-screens react-native-safe-area-context
 # estratégia de navegação
 npm i @react-navigation/native-stack
+# estratégia de armazenamento de dados local
+npx expo install @react-native-async-storage/async-storage
 ```
 
 Dependências de desenvolvimento
