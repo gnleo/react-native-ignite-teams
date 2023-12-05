@@ -14,6 +14,7 @@ import { PlayerStorageDTO } from "@storage/players/PlayerStorageDTO";
 import { AppError } from "@utils/AppError";
 import { playerAddOnGroup } from "@storage/players/addByGroup";
 import { playerGetByGroupAndTeam } from "@storage/players/getByGroupAndTeam";
+import { playerRemoveByGroup } from "@storage/players/removeByGroup";
 
 type RouteParams = {
   group: string
@@ -58,6 +59,16 @@ export function Players(){
     } catch (error) {
       console.log(error)
       Alert.alert(group, `Não foi possível listar os jogadores do ${team}`)
+    }
+  }
+
+  async function handleRemovePlayerOfGroup(playerName: string){
+    try {
+      await playerRemoveByGroup(playerName, group)
+      fetchPlayersByTeam()
+    } catch (error) {
+      console.log(error)
+      Alert.alert('Remover jogador', 'Não foi possível remover')
     }
   }
 
@@ -115,7 +126,7 @@ export function Players(){
         renderItem={({item}) => (
           <PlayerCard 
             name={item.name}
-            onRemove={() => console.log('remover jogador')}
+            onRemove={() => handleRemovePlayerOfGroup(item.name)}
           />
         )}
         ListEmptyComponent={() => (
