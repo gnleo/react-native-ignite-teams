@@ -34,3 +34,15 @@ Dependências de desenvolvimento
 ```bash
 npm i @types/styled-components @types/styled-components-react-native -D
 ```
+
+## Interfaces
+
+| <img src="./resources/1.png" width="140"> | <img src="./resources/2.png" width="140"> | <img src="./resources/7.png" width="140"> |
+
+| <img src="./resources/3.png" width="140"> | <img src="./resources/4.png" width="140"> | <img src="./resources/5.png" width="140"> |
+
+| <img src="./resources/6.png" width="140"> |
+
+Sequencialmente, da esquerda para direita você pode acompanhar o fluxo de funcionamento da aplicação.
+
+Para gerenciamento de dados na aplicação, se utilizou a estratégia de armazenamento local através do `localStorage`.
